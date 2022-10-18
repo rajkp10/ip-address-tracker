@@ -8,7 +8,7 @@ module.exports = {
         DarkGray: "hsl(0, 0%, 59%)",
       },
       backgroundImage: {
-        pattern: "url('dist/src/images/pattern-bg.png')",
+        pattern: "url('/public/pattern-bg.png')",
       },
     },
   },
