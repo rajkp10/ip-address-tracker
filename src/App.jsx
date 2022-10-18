@@ -4,7 +4,7 @@ import MapComponent from "./components/MapComponent";
 
 function App() {
   return (
-    <main className="min-h-screen min-w-full flex-col">
+    <main className="min-h-screen min-w-full flex flex-col">
       <SearchComponent />
       <MapComponent />
     </main>

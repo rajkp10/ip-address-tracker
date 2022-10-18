@@ -16,14 +16,14 @@ function SearchComponent() {
         />
         <div className="w-2/12 md:w-1/12 bg-black grid place-items-center hover:bg-VeryDarkGray transition duration-300">
           <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
-            <path fill="none" stroke="#FFF" stroke-width="3" d="M2 1l6 6-6 6" />
+            <path fill="none" stroke="#FFF" strokeWidth="3" d="M2 1l6 6-6 6" />
           </svg>
         </div>
       </div>
       {/* Information section */}
-      <div className="absolute container top-40 md:top-44 py-8 h-auto md:h-36 max-w-xs md:max-w-5xl bg-white flex flex-col md:flex-row md:divide-x-2 space-y-4 md:space-y-0 shadow-lg rounded-xl">
+      <div className="absolute container top-40 md:top-44 py-8 h-auto md:h-36 max-w-xs md:max-w-5xl bg-white flex flex-col md:flex-row md:divide-x-2 space-y-4 md:space-y-0 shadow-lg rounded-xl z-10">
         {/* ip address */}
-        <section className="px-6 h-full w-full md:w-1/4 flex flex-col justify-start items-center space-y-2">
+        <section className="px-6 h-full w-full md:w-1/4 flex flex-col justify-start items-center md:items-start space-y-2">
           <span className="text-xs text-DarkGray font-semibold uppercase tracking-widest">
             ip address
           </span>
@@ -32,7 +32,7 @@ function SearchComponent() {
           </h2>
         </section>
         {/* location */}
-        <section className="px-6 h-full w-full md:w-1/4 flex flex-col justify-start items-center space-y-2">
+        <section className="px-6 h-full w-full md:w-1/4 flex flex-col justify-start items-center md:items-start space-y-2">
           <span className="text-xs text-DarkGray font-semibold uppercase tracking-widest">
             location
           </span>
@@ -41,7 +41,7 @@ function SearchComponent() {
           </h2>
         </section>
         {/* timezone */}
-        <section className="px-6 h-full w-full md:w-1/4 flex flex-col justify-start items-center space-y-2">
+        <section className="px-6 h-full w-full md:w-1/4 flex flex-col justify-start items-center md:items-start space-y-2">
           <span className="text-xs text-DarkGray font-semibold uppercase tracking-widest">
             timezone
           </span>
@@ -50,7 +50,7 @@ function SearchComponent() {
           </h2>
         </section>
         {/* isp */}
-        <section className="px-6 h-full w-full md:w-1/4 flex flex-col justify-start items-center space-y-2">
+        <section className="px-6 h-full w-full md:w-1/4 flex flex-col justify-start items-center md:items-start space-y-2">
           <span className="text-xs text-DarkGray font-semibold uppercase tracking-widest">
             isp
           </span>
