@@ -1,4 +1,8 @@
 import React from "react";
+<<<<<<< HEAD
+=======
+import bgImage from "../images/pattern-bg.png";
+>>>>>>> 39e9f85a86b5007042e595d3716b8315f71c7234
 import { useGlobalContext } from "./context";
 
 const IndividualInformation = ({ header, info }) => {
@@ -22,7 +26,9 @@ function SearchComponent() {
   const { country, region, city, timezone, lat, lng } = location;
 
   return (
-    <div className="relative p-4 h-[35vh] w-full flex flex-col items-center bg-pattern bg-no-repeat bg-cover">
+    <div
+      className={`relative p-4 h-[35vh] w-full flex flex-col items-center bg-pattern bg-no-repeat bg-cover`}
+    >
       {/* Header */}
       <h1 className="mt-4 font-extrabold text-white text-3xl">
         IP Address Tracker
