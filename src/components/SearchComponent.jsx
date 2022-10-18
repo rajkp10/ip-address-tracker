@@ -1,8 +1,5 @@
 import React from "react";
-<<<<<<< HEAD
-=======
 import bgImage from "../images/pattern-bg.png";
->>>>>>> 39e9f85a86b5007042e595d3716b8315f71c7234
 import { useGlobalContext } from "./context";
 
 const IndividualInformation = ({ header, info }) => {
