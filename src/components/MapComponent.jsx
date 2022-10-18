@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import CustomMarker from "../images/icon-location.svg";
+import { useGlobalContext } from "./context";
 
 const customMarker = new L.Icon({
   iconUrl: CustomMarker,
@@ -9,10 +10,16 @@ const customMarker = new L.Icon({
 });
 
 function MapComponent() {
+  const { data } = useGlobalContext();
+  const { location } = data;
+  const { lat, lng } = location;
+
+  useEffect(() => {}, [data]);
+
   return (
     <div className="h-[65vh] w-full">
       <MapContainer
-        center={[37.40599, -122.078514]}
+        center={[lat, lng]}
         zoom={13}
         scrollWheelZoom={false}
         className="z-0"
@@ -22,7 +29,7 @@ function MapComponent() {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={[37.40599, -122.078514]} icon={customMarker}>
+        <Marker position={[lat, lng]} icon={customMarker}>
           <Popup>
             A pretty CSS3 popup. <br /> Easily customizable.
           </Popup>
