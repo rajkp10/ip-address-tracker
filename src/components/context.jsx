@@ -46,7 +46,6 @@ const AppProvider = ({ children }) => {
   };
 
   const handleSearch = () => {
-    console.log(query);
     // check if input is empty or invalid ip
     if (!query) {
       setQuery("Write IP");

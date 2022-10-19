@@ -19,7 +19,7 @@ function SearchComponent() {
     useGlobalContext();
 
   const { ip, location, isp } = data;
-  const { country, region, city, timezone, lat, lng } = location;
+  const { postalCode, region, city, timezone, lat, lng } = location;
 
   return (
     <div
@@ -60,7 +60,7 @@ function SearchComponent() {
             {/* Location */}
             <IndividualInformation
               header="locatoin"
-              info={`${city}, ${region}, ${country}`}
+              info={`${city}, ${region}, ${postalCode}`}
             />
             {/* Timezone */}
             <IndividualInformation header="timezone" info={"UTC" + timezone} />
