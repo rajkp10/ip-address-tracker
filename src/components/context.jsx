@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import axios from "axios";
 
 export const API = `https://geo.ipify.org/api/v2/country,city?apiKey=${
-  import.meta.env.VITE_GEOLOCATION_API_KEY
+  import.meta.env.VITE_IP_GEOLOCATION_API_KEY
 }&ipAddress=`;
 
 const initialData = {
