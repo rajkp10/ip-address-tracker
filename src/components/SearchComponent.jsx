@@ -48,7 +48,7 @@ function SearchComponent() {
         </div>
       </div>
       {/* Information section */}
-      <div className="absolute container top-40 md:top-44 py-8 h-auto md:h-36 max-w-xs md:max-w-5xl bg-white flex flex-col md:flex-row md:divide-x-2 space-y-4 md:space-y-0 shadow-lg rounded-xl z-10">
+      <div className="absolute container top-40 md:top-44 py-8 h-auto max-w-xs md:max-w-5xl bg-white flex flex-col md:flex-row md:divide-x-2 space-y-4 md:space-y-0 shadow-lg rounded-xl z-10">
         {loading ? (
           <div className="h-full w-full grid place-items-center text-2xl font-semibold text-VeryDarkGray">
             Loading...
