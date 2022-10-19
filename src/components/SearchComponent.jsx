@@ -39,7 +39,7 @@ function SearchComponent() {
           value={query}
         />
         <div
-          className="w-2/12 md:w-1/12 bg-black grid place-items-center hover:bg-VeryDarkGray transition duration-300"
+          className="w-2/12 md:w-1/12 bg-black grid place-items-center hover:bg-VeryDarkGray hover:cursor-pointer transition duration-300"
           onClick={handleSearch}
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14">
