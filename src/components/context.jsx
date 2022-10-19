@@ -63,7 +63,6 @@ const AppProvider = ({ children }) => {
     }
     setLoading(true);
     axios.get(`${API}${query}`).then((res) => {
-      console.log(res.data);
       setData(res.data);
     });
     setLoading(false);
