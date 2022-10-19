@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import {
   MapContainer,
   TileLayer,
@@ -18,7 +18,7 @@ const customMarker = new L.Icon({
 
 const ChangeView = ({ center, zoom }) => {
   const map = useMap();
-  map.flyTo(center, zoom);
+  map.flyTo(center, zoom, { duration: 2 });
   return null;
 };
 
@@ -28,13 +28,10 @@ function MapComponent() {
   const { city, lat, lng } = location;
   const center = [lat, lng];
 
-  useEffect(() => {}, [data]);
-
   return (
     <div className="h-[65vh] w-full">
       <MapContainer
-        key={JSON.stringify(lat, lng)}
-        center={center}
+        center={[lat, lng]}
         zoom={13}
         zoomControl={false}
         scrollWheelZoom={false}
@@ -46,7 +43,7 @@ function MapComponent() {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        <Marker position={center} icon={customMarker}>
+        <Marker position={[lat, lng]} icon={customMarker}>
           <Popup>
             {ip}
             <br />
